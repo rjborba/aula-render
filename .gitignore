@@ -1,0 +1,5 @@
+// Staticamente gerada. Deve ser ignorada
+ssg.html
+
+/node_modules
+/.vscode

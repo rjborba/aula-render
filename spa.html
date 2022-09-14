@@ -1,0 +1,36 @@
+<html>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const rootElement = document.getElementById("root");
+
+      const render1 = (data) => {
+        document.getElementById("page").innerHTML = `
+          <div>
+              Page 1
+          </div>
+      `;
+      };
+
+      const render2 = (error) => {
+        document.getElementById("page").innerHTML = `
+            <div>
+                Page 2
+            </div>
+        `;
+      };
+
+      rootElement.innerHTML = `
+        <html>
+        <div id="page">
+        </div>
+          <div>
+              <button onclick="render1()">Page 1</button>
+              <button onclick="render2()">Page 2</button>
+          </div>
+        </html>
+      `;
+    </script>
+  </body>
+</html>
